@@ -1,3 +1,7 @@
+[Looking for a godot 3.x compatible version?](https://github.com/ahopness/GodotRetro/tree/3.x)
+
+------
+
 <div align="center">
 	<p align="center"> <i> 💜 Ｇｏｄｏｔ Ｒｅｔｒｏ 💜 </i> </p>
 	<p align="center"> <i> Ｏｌｄ－ｓｃｈｏｏｌ ｓｈａｄｅｒ ｐａｃｋ </i> </p>
@@ -5,7 +9,6 @@
 	<img src="https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
-	<img src="https://img.shields.io/badge/version-3.5.0-b339e3?style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square" align="center"></img>
@@ -191,7 +194,7 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 Unfortnetly, some shaders arent 100% perfect.
 
- - Some shaders may not work in GLES2, please check the used shader's header inside code for more information!
+ - Some shaders may not work in the web export, please check the used shader's header inside code for more information!
 
 
 
