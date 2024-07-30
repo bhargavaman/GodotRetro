@@ -18,10 +18,10 @@ vec2 Circle(float Start, float Points, float Point) {
 void fragment(){
 	vec2 uv = FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	vec2 PixelOffset = amount / (1.0 / SCREEN_PIXEL_SIZE).xy;
-	
+
 	float Start = 2.0 / 14.0;
 	vec2 Scale = 0.66 * 4.0 * 2.0 * PixelOffset.xy;
-	
+
 	vec3 N0 = texture(SCREEN_TEXTURE, uv + Circle(Start, 14.0, 0.0) * Scale).rgb;
 	vec3 N1 = texture(SCREEN_TEXTURE, uv + Circle(Start, 14.0, 1.0) * Scale).rgb;
 	vec3 N2 = texture(SCREEN_TEXTURE, uv + Circle(Start, 14.0, 2.0) * Scale).rgb;
@@ -37,12 +37,12 @@ void fragment(){
 	vec3 N12 = texture(SCREEN_TEXTURE, uv + Circle(Start, 14.0, 12.0) * Scale).rgb;
 	vec3 N13 = texture(SCREEN_TEXTURE, uv + Circle(Start, 14.0, 13.0) * Scale).rgb;
 	vec3 N14 = texture(SCREEN_TEXTURE, uv).rgb;
-	
+
 	float W = 1.0 / 15.0;
-	
+
 	vec3 color = vec3(0,0,0);
-	
-	color.rgb = 
+
+	color.rgb =
 		(N0 * W) +
 		(N1 * W) +
 		(N2 * W) +
@@ -58,7 +58,6 @@ void fragment(){
 		(N12 * W) +
 		(N13 * W) +
 		(N14 * W);
-	
+
 	COLOR = vec4(color.rgb,1.0);
 }
-

@@ -18,7 +18,7 @@ vec4 sharpenMask (sampler2D st, vec2 fc, vec2 sps){
 	vec4 center = texture (st, fc/sps);
 	vec4 right = texture (st, (fc + vec2 (1, 0))/sps);
 	vec4 down = texture (st, (fc + vec2 (0, -1))/sps);
-	
+
 	// Return edge detection
 	return (1.0 + 4.0*sharpen_amount)*center -sharpen_amount*(up + left + right + down);
 }

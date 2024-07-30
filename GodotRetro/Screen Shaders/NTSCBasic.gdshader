@@ -34,12 +34,12 @@ vec3 YIQ2RGB(vec3 yiq){
 	vec3 rgb = mat3(vec3(1,  0.956,  0.621),
 				    vec3(1, -0.272, -0.647),
 				    vec3(1, -1.106,  1.703)) * yiq;
-	
+
 	rgb = clamp(rgb, 0, 1);
 	if (!linearColorSpace){
 		rgb = GammaToLinearSpace(rgb);
 	}
-	
+
 	return rgb;
 }
 
@@ -54,10 +54,10 @@ void fragment(){
 	float bleedTaps = ceil(bleedWidth / bleedStep);
 	float bleedDelta = bleedWidth / bleedTaps;
 	float fringeWidth = 0.0025 * _fringing; // width of fringing
-	
+
 	vec2 uv = FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 	vec3 yiq = SampleYIQ(uv, 0, SCREEN_TEXTURE);
-	
+
         // Bleeding
         for (float i = 0.0; i < bleedTaps; i++)
         {

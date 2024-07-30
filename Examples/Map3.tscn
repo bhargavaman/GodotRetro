@@ -70,15 +70,15 @@ transform = Transform3D(4.75, 0, 8.22724, 0, 9.5, 0, -8.22724, 0, 4.75, -0.47432
 
 [node name="2" type="MeshInstance3D" parent="Models/Mannequin1"]
 transform = Transform3D(0.0156396, 0, -0.00401615, 0, 0.016147, 0, 0.00401615, 0, 0.0156396, 0.007, -0.003, 0.003)
+material_override = ExtResource("2_op6ay")
 mesh = ExtResource("8")
-surface_material_override/0 = ExtResource("2_op6ay")
 
 [node name="Mannequin2" type="Node3D" parent="Models"]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Models/Mannequin2"]
 transform = Transform3D(0.0388213, 0, -0.0672404, 0, 0.0776426, 0, 0.0672404, 0, 0.0388213, 0.427875, 0.0415803, -0.404017)
+material_override = ExtResource("2_op6ay")
 mesh = ExtResource("5")
-surface_material_override/0 = ExtResource("2_op6ay")
 
 [node name="Floor" type="Node3D" parent="Models"]
 
@@ -89,6 +89,7 @@ surface_material_override/0 = ExtResource("4_2275d")
 
 [node name="Floor2" type="MeshInstance3D" parent="Models/Floor"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+material_override = ExtResource("4_2275d")
 mesh = SubResource("2")
 surface_material_override/0 = ExtResource("4_2275d")
 
@@ -119,10 +120,10 @@ spot_angle = 65.3
 environment = SubResource("4")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Data"]
-autoplay = "Light3D"
 libraries = {
 "": SubResource("AnimationLibrary_7wbbk")
 }
+autoplay = "Light3D"
 
 [node name="View" type="Node" parent="."]
 
@@ -138,6 +139,8 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="UI/Effects"]
 position = Vector2(160, 120)

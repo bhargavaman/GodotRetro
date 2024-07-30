@@ -17,16 +17,16 @@ float grain (vec2 st, float time){
 void fragment(){
 	//Coords
 	vec2 uv =  FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
-	
+
 	//Produce some noise based on the coords
 	vec3 grainPlate = vec3(grain(uv, TIME));
-	
+
 	//Get the image
 	vec4 img = texture(SCREEN_TEXTURE, uv);
-	
+
 	//Mix the two signals together
 	vec3 mixer = mix(img.rgb, grainPlate, amount);
-	
-	
-	COLOR = vec4(mixer,1.0); 
+
+
+	COLOR = vec4(mixer,1.0);
 }
