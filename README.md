@@ -20,7 +20,7 @@
 * [About](#about)
 * [License](#license)
 * [Shaders](#shaders)
-* [Instalation](#instalation)
+* [Installation](#installation)
 * [Examples](#examples)
 * [Features](#features)
 * [Limitations](#limitations)
@@ -38,7 +38,7 @@
 
 * Shaders
 
-All shaders are licensed under **CC0**, with the exeption of the *Glitch* and the *NTSC Basic* shaders, who are licensed under **MIT**. 
+All shaders are licensed under **CC0**, with the exeption of the *Glitch* and the *NTSC Basic* shaders, that are licensed under **MIT**. 
 
 * Example Scenes
 
@@ -92,7 +92,7 @@ The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed und
 
 ### Recommendation
 
-The shaders looks the best when they are combined!
+The shaders looks better when they are combined!
 
 **Example :**
 
@@ -105,21 +105,21 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 <img src="https://user-images.githubusercontent.com/56614267/138868037-8d0ec41a-9e59-47ec-9873-fc9a2ff014b9.gif" width="50%"></img>
 
 
-- Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for getting a more realistic retro effect!
+- Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for achieving a more realistic retro effect!
 
 - Tip 2 : **Lens Distortion** and high FOV combined can give a MTV 2000 blumbers aesthetics if used correctly!
 
-- Tip 3 : Be careful with **Grain**! It can get messy really easily!
+- Tip 3 : Be careful with **Grain**! It can get really messy really easily!
 
 - Tip 4 : All of the shaders can go beyond their default range values, just open the shader code and just the numbers inside the *hint_range()* function in the variables section.
 
-- Tip 5 : **AWAYS** check the headers inside the shader you are using, theres information about *compatibility*, *credits* and *licesing* in there!
+- Tip 5 : **ALWAYS** check the headers inside the shaders you are using, there's information about *compatibility*, *credits* and *licesing* in there!
 
 
 
-## Instalation
+## Installation
 
-**To use the shaders you gotta** :
+**To use the shaders you got to** :
 
 1. Copy the *GodotRetro* folder to your project (can be anywhere)
 
@@ -146,15 +146,15 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 ### DISCLAMER :
 
-- To use 2+ shaders at the same time, you gotta use a BackBufferCopy set as Viewport for each effect.
+- To use 2+ shaders at the same time, you need to use a BackBufferCopy set as a Viewport for each effect.
 
-- For UI, be sure to set it above the shaders for then to be aplied for more imersion.
+- For UI, be sure to set it above the shaders in the node hierarchy for them to be affected for more imersion.
 
 
 
 ## Examples
 
-5 free easy to learn examples are available with the pack.
+5 free and easy to learn examples are available with the pack.
 
 <div align="center">
    <img src="https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif" align="center" width="30%"></img>
@@ -194,7 +194,7 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 Unfortnetly, some shaders arent 100% perfect.
 
- - Some shaders may not work in the web export, please check the used shader's header inside code for more information!
+ - Some shaders may not work in the web export, please check each used shader's code header for more information!
 
 
 
