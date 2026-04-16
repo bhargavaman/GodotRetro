@@ -1,7 +1,6 @@
 //SHADER ORIGINALY CREADED BY "Gaktan" FROM SHADERTOY
 //MODIFIED AND PORTED TO GODOT BY AHOPNESS (@ahopness)
 //LICENSE : CC0
-//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/Ms3XWH#
 
 shader_type canvas_item;
@@ -30,7 +29,7 @@ float verticalBar(float pos, float uvY, float offset){
 void fragment(){
 	vec2 uv =  FRAGCOORD.xy / (1.0 / SCREEN_PIXEL_SIZE).xy;
 
-	for (float i = 0.0; i < 0.71; i += 0.1313){
+	for (float i = 0.0; i < 0.71; i += 0.1313){ // 5 iterations
 		float d = mod(TIME - tan(TIME * 0.24 * i), 0);
 		float o = sin(1.0 - tan(TIME * 0.24 * i));
 		o *= offsetIntensity;

@@ -1,7 +1,6 @@
 //SHADER ORIGINALY CREADED BY "ompuco" FROM SHADERTOY
 //MODIFIED AND PORTED TO GODOT BY AHOPNESS (@ahopness)
 //LICENSE : CC0
-//COMATIBLE WITH : GLES2, GLES3, WEBGL
 //SHADERTOY LINK : https://www.shadertoy.com/view/XlsczN
 
 shader_type canvas_item;

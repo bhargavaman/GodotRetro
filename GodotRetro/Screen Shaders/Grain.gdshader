@@ -1,7 +1,6 @@
 //SHADER ORIGINALY CREADED BY "spl!te" FROM GITHUB FOR GODOT 2.1
 //MODIFIED AND PORTED TO GODOT BY AHOPNESS (@ahopness)
 //LICENSE : CC0
-//COMATIBLE WITH : GLES2, GLES3
 //GITHUB LINK : https://github.com/splite/Godot_Film_Grain_Shader
 //ORIGINAL POST LINK : http://devlog-martinsh.blogspot.com/2013/05/image-imperfections-and-film-grain-post.html
 

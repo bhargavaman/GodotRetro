@@ -31,7 +31,9 @@ void vertex() {
 }
 
 void fragment() {
-	vec4 tex = texture(albedoTex, mix(vertex_coordinates.xy /vertex_coordinates.z, UV.xy, affine_texture_mapping_amount));
+	vec4 tex = texture(albedoTex, 
+		mix(vertex_coordinates.xy /vertex_coordinates.z, UV.xy, affine_texture_mapping_amount)
+		);
 	
 	ALBEDO = tex.rgb * color.rgb;
 	SPECULAR = specular_intensity;

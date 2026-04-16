@@ -1,7 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://dgqwlaxv8ts3t"]
+[gd_scene format=3 uid="uid://dgqwlaxv8ts3t"]
 
-[ext_resource type="Shader" path="res://GodotRetro/Object Shaders/Debug/helloworld2-2d.gdshader" id="1"]
-[ext_resource type="Shader" path="res://GodotRetro/Object Shaders/Debug/helloworld-2d.gdshader" id="3"]
+[ext_resource type="Shader" uid="uid://ccdlgjwvdheis" path="res://GodotRetro/Object Shaders/Debug/helloworld2.2d.gdshader" id="1"]
+[ext_resource type="Shader" uid="uid://bsfgp76fh6usn" path="res://GodotRetro/Object Shaders/Debug/helloworl.2d.gdshader" id="3"]
 [ext_resource type="Material" uid="uid://sou3v5tnb252" path="res://Examples/Map 5 - Dithering/dithering_mat.material" id="3_8nvsc"]
 
 [sub_resource type="GDScript" id="7"]
@@ -43,7 +43,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ptka7"]
 _data = {
-"anm": SubResource("5")
+&"anm": SubResource("5")
 }
 
 [sub_resource type="ShaderMaterial" id="2"]
@@ -52,7 +52,7 @@ shader = ExtResource("1")
 [sub_resource type="ShaderMaterial" id="6"]
 shader = ExtResource("3")
 
-[node name="scnMap5" type="Control"]
+[node name="scnMap5" type="Control" unique_id=1373560533]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -61,30 +61,28 @@ grow_horizontal = 2
 grow_vertical = 2
 script = SubResource("7")
 
-[node name="anm" type="AnimationPlayer" parent="."]
-libraries = {
-"": SubResource("AnimationLibrary_ptka7")
-}
-autoplay = "anm"
+[node name="anm" type="AnimationPlayer" parent="." unique_id=752999177]
+libraries/ = SubResource("AnimationLibrary_ptka7")
+autoplay = &"anm"
 
-[node name="crRainbow" type="ColorRect" parent="."]
+[node name="crRainbow" type="ColorRect" parent="." unique_id=1978626506]
 material = SubResource("2")
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="crUV" type="ColorRect" parent="."]
+[node name="crUV" type="ColorRect" parent="." unique_id=1417722510]
 material = SubResource("6")
 layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="BackBufferCopy" type="BackBufferCopy" parent="."]
+[node name="BackBufferCopy" type="BackBufferCopy" parent="." unique_id=2127322313]
 position = Vector2(160, 120)
 scale = Vector2(1.6, 1.2)
 copy_mode = 2
 
-[node name="fxDithering" type="ColorRect" parent="BackBufferCopy"]
+[node name="fxDithering" type="ColorRect" parent="BackBufferCopy" unique_id=814487395]
 material = ExtResource("3_8nvsc")
 anchors_preset = 15
 anchor_right = 1.0

@@ -1,7 +1,6 @@
 //SHADER ORIGINALY CREADED BY "ehj1" FROM SHADERTOY
 //MODIFIED AND PORTED TO GODOT BY AHOPNESS (@ahopness)
 //LICENSE : CC0
-//COMATIBLE WITH : GLES2, GLES3
 //SHADERTOY LINK : https://www.shadertoy.com/view/ldXGW4
 
 shader_type canvas_item;
@@ -16,7 +15,7 @@ uniform float scalinesOpt :hint_range(0,6) = 0.8;
 uniform float rgbOffsetOpt :hint_range(0,2) = 0.2;
 uniform float horzFuzzOpt :hint_range(0,5) = 0.15;
 
-// Noise generation functions borrowed from:
+// Noise functions borrowed from:
 // https://github.com/ashima/webgl-noise/blob/master/src/noise2D.glsl
 
 vec3 mod289vec3(vec3 x){

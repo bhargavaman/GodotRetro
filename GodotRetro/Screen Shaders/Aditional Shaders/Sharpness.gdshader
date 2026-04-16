@@ -1,7 +1,6 @@
 //SHADER ORIGINALY CREADED BY "Nihilistic_Furry" FROM SHADERTOY
 //MODIFIED AND PORTED TO GODOT BY AHOPNESS (@ahopness)
 //LICENSE : CC0
-//COMATIBLE WITH : GLES2, GLES3, WEBGL
 //SHADERTOY LINK : https://www.shadertoy.com/view/wsK3Wt
 
 shader_type canvas_item;
@@ -24,6 +23,5 @@ vec4 sharpenMask (sampler2D st, vec2 fc, vec2 sps){
 }
 
 void fragment(){
-	// Detect edges and output to screen
-	COLOR = sharpenMask (SCREEN_TEXTURE, FRAGCOORD.xy, 1.0 / SCREEN_PIXEL_SIZE);
+	COLOR = sharpenMask(SCREEN_TEXTURE, FRAGCOORD.xy, 1.0 / SCREEN_PIXEL_SIZE);
 }
