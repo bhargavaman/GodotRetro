@@ -5,13 +5,13 @@
 <div align="center">
 	<p align="center"> <i> 💜 Ｇｏｄｏｔ Ｒｅｔｒｏ 💜 </i> </p>
 	<p align="center"> <i> Ｏｌｄ－ｓｃｈｏｏｌ ｓｈａｄｅｒ ｐａｃｋ </i> </p>
-	<img src="https://user-images.githubusercontent.com/56614267/187816590-4fc9e419-84ba-4082-bfaf-e6f02001824d.png" alt="Logo" align="right" width="50%"></img>
 	<img src="https://img.shields.io/badge/license-CC0%20&%20MIT-b339e3?style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/stars/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/forks/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/repo-size/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
 	<img src="https://img.shields.io/github/last-commit/Ahopness/GodotRetro?color=b339e3&style=flat-square" align="center"></img>
-	<img src="https://img.shields.io/badge/Twitter-Ahopness-b339e3?style=flat-square" align="center"></img>
+	<br> <br>
+	<img src="https://user-images.githubusercontent.com/56614267/187816590-4fc9e419-84ba-4082-bfaf-e6f02001824d.png" alt="Logo" width="50%"></img>
 	<hr>
 </div>
 
@@ -98,11 +98,11 @@ The shaders looks better when they are combined!
 
 This scene uses the following combination : **Lens Distortion + Grain + TV**
 
-<img src="https://user-images.githubusercontent.com/56614267/138868860-0a105613-279c-4918-84b1-a1208ad206f8.png" width="50%"></img>
+<img width="640" height="480" alt="ScreencastFrom2026-04-1619-40-52-ezgif com-optimize" src="https://github.com/user-attachments/assets/8b78da8e-c40b-4e50-a1c7-c74ff34cbba3" />
 
 And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
-<img src="https://user-images.githubusercontent.com/56614267/138868037-8d0ec41a-9e59-47ec-9873-fc9a2ff014b9.gif" width="50%"></img>
+<img width="640" height="480" alt="ezgif com-optimize" src="https://github.com/user-attachments/assets/026c96cb-8fd1-4659-a15d-4a5c2a7aff7a" />
 
 
 - Tip 1 : **Sharpness** is a must have if using any of the *TV*, *VHS* or the *NTSC* shaders for achieving a more realistic retro effect!
@@ -157,9 +157,9 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 5 free and easy to learn examples are available with the pack.
 
 <div align="center">
-   <img src="https://user-images.githubusercontent.com/56614267/138868105-6b24ea23-ba13-4160-b936-35a43f9993d5.gif" align="center" width="30%"></img>
-   <img src="https://user-images.githubusercontent.com/56614267/138868168-803a3cd0-82c9-4b83-8e1e-9bc614d5681c.png" align="center" width="30%"></img>
-   <img src="https://user-images.githubusercontent.com/56614267/187816644-c782709d-87d3-4d74-8b16-659a700fb408.png" align="center" width="30%"></img>
+	<img width="320" height="240" alt="ScreencastFrom2026-04-1619-41-17-ezgif com-optimize" src="https://github.com/user-attachments/assets/ad13f139-8285-41b8-a88d-2663e19f8c60" />
+	<img width="320" height="240" alt="ezgif com-optimize(2)" src="https://github.com/user-attachments/assets/31f9b17e-9bfd-4031-b484-24e7f7d60c5d" />
+	<img width="320" height="240" alt="ezgif com-video-to-gif-converter" src="https://github.com/user-attachments/assets/27e8663b-fc7f-4241-996b-504c774f2ea2" />
 </div>
 
 **General controls**:
