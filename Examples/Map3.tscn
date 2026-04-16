@@ -47,7 +47,7 @@ _data = {
 
 [sub_resource type="ShaderMaterial" id="6"]
 shader = ExtResource("7")
-shader_parameter/strength = -0.035
+shader_parameter/strength = -0.03500000003256
 
 [sub_resource type="ShaderMaterial" id="7"]
 shader = ExtResource("12")
@@ -55,12 +55,12 @@ shader_parameter/sharpen_amount = 1.0
 
 [sub_resource type="ShaderMaterial" id="8"]
 shader = ExtResource("10")
-shader_parameter/blur_amount = 3.0
-shader_parameter/signal_quality = 0.2
-shader_parameter/bottom_strenth = 3.0
+shader_parameter/blur_amount = 3.50000016625
+shader_parameter/signal_quality = 0.30000001425
+shader_parameter/bottom_strenth = 0.10000000475
 shader_parameter/grain_tex = ExtResource("11")
 
-[node name="scnMap3" type="Node3D" unique_id=70473153]
+[node name="Map3" type="Node3D" unique_id=70473153]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1337724158]
 environment = SubResource("4")
@@ -178,3 +178,5 @@ offset_left = -100.0
 offset_top = -100.0
 offset_right = -100.0
 offset_bottom = -100.0
+grow_horizontal = 2
+grow_vertical = 2

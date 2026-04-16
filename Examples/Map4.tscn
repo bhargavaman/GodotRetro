@@ -163,7 +163,7 @@ shader_parameter/Hilights = Color(0.027451, 0, 0.164706, 1)
 blend_mode = 1
 light_mode = 1
 
-[node name="scnMap4" type="Node2D" unique_id=1283006161]
+[node name="Map4" type="Node2D" unique_id=1283006161]
 
 [node name="Map" type="Node2D" parent="." unique_id=1908398790]
 

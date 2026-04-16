@@ -52,7 +52,7 @@ shader = ExtResource("1")
 [sub_resource type="ShaderMaterial" id="6"]
 shader = ExtResource("3")
 
-[node name="scnMap5" type="Control" unique_id=1373560533]
+[node name="Map5" type="Control" unique_id=1373560533]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
