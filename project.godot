@@ -15,16 +15,12 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="GodotRetro"
-config/features=PackedStringArray("4.6")
-config/icon="res://icon.png"
+config/features=PackedStringArray("4.7")
+config/icon="res://addons/godot_retro/icon.png"
 
 [audio]
 
-buses/default_bus_layout="res://Examples/bus_main.tres"
-
-[autoload]
-
-GameManeger="*res://Examples/scrGameManeger.gd"
+buses/default_bus_layout=""
 
 [display]
 
@@ -37,6 +33,10 @@ window/stretch/mode="viewport"
 [editor]
 
 movie_writer/movie_file="/home/lucas/Desktop/Glitch City.avi"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_retro/plugin.cfg")
 
 [input]
 
