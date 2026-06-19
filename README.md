@@ -30,7 +30,7 @@
 
 ## About
 
-**Godot Retro** is a shader pack for godot, with various ports of shades from *ShaderToy*, *Unity* and The *Book Of Shaders*. 
+**Godot Retro** is a **compositor effects** and **shader** pack for godot, with various ports of shades from *ShaderToy*, *Unity* and The *Book Of Shaders*.
 
 
 
@@ -118,6 +118,14 @@ And this scene use this combination : **Lens Distortion + Sharpness + NTSC**
 
 
 ## Installation
+
+### Compositor Effect (Forward+ & Mobile Renderers)
+
+Simply create a Compositor inside your WorldEnvironment, when adding a new CompositorEffect, a list of all available effects will automatically apear once you import the GodotRetro plugin.
+
+<img width="438" height="972" alt="image" src="https://github.com/user-attachments/assets/5066c175-3b15-4e90-8f9d-014e8be3b18b" />
+
+### Shader Material (Compatibility Renderer)
 
 **To use the shaders you got to** :
 
