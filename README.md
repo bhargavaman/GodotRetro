@@ -50,23 +50,9 @@ The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed und
 
 ## Shaders
 
-- Glitch
+- CRT Simple
 
-- NTSC Basic
-
-- Grain
-
-- Simple Grain
-
-- Jpeg Compression
-
-- Dithering
-
-- Lens Distortion
-
-- NTSC
-
-- Simple Glitch
+- CRT Complex
 
 - TV
 
@@ -74,21 +60,30 @@ The *shrWind* shader, used in map 4, is made by **Maujoe** and it's licensed und
 
 - VHS Pause
 
-- Accurate CRT
+- Dithering
 
-- B&W
+- Posterization Simple
 
-- Better CC
+- Posterization Complex
 
-- Blur
+- Glitch Simple
 
-- Color Precission
+- Glitch Complex
+
+- Grain Simple
+
+- Grain Complex
+
+- Lens Distortion
+
+- Monochrome
 
 - Sharpness
 
-- Hello World
+- Color Correction
 
-- Hello World 2
+- PSX (Spatial)
+
 
 ### Recommendation
 
