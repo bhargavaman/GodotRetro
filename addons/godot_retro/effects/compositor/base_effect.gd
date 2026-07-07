@@ -22,8 +22,12 @@ func _notification(what: int) -> void:
 	if what == NOTIFICATION_PREDELETE:
 		if shader.is_valid() and rd:
 			rd.free_rid(shader)
+		if pipeline.is_valid() and rd:
+			rd.free_rid(pipeline)
 		if copy_shader.is_valid() and rd:
 			rd.free_rid(copy_shader)
+		if copy_pipeline.is_valid() and rd:
+			rd.free_rid(copy_pipeline)
 		if sampler.is_valid() and rd:
 			rd.free_rid(sampler)
 		for tex in temp_textures.values():
@@ -134,6 +138,9 @@ func _render_callback(p_effect_callback_type: int, p_render_data: RenderData) ->
 			rd.compute_list_bind_uniform_set(copy_list, copy_uniform_set, 0)
 			rd.compute_list_dispatch(copy_list, x_groups, y_groups, 1)
 			rd.compute_list_end()
+			
+			if copy_uniform_set.is_valid():
+				rd.free_rid(copy_uniform_set)
 
 		var uniform_image := RDUniform.new()
 		uniform_image.uniform_type = RenderingDevice.UNIFORM_TYPE_IMAGE
@@ -160,3 +167,6 @@ func _render_callback(p_effect_callback_type: int, p_render_data: RenderData) ->
 			rd.compute_list_set_push_constant(compute_list, byte_array, byte_array.size())
 		rd.compute_list_dispatch(compute_list, x_groups, y_groups, 1)
 		rd.compute_list_end()
+
+		if uniform_set.is_valid():
+			rd.free_rid(uniform_set)
